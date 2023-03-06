@@ -1,0 +1,62 @@
+POST http://localhost:3007/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+
+GET http://localhost:3007/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+
+###
+
+GET http://localhost:3007/states/8
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+
+###
+
+POST http://localhost:3007/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+GET http://localhost:3007/districts/322
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+
+###
+
+DELETE http://localhost:3007/districts/320
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+
+###
+
+PUT http://localhost:3007/districts/315
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET http://localhost:3007/states/5/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc4MDg1MzE5fQ.kSgVYymkyeiDNqt-BcqYa9PZhNZI3-sQ7sc-Dd52t4c
+
